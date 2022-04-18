@@ -51,7 +51,7 @@ function saludo(idioma) {
   if (idioma === 'aleman') {
     return 'Guten Tag!';
   } else if (idioma === 'mandarin') {
-    return 'Ni Hao';
+    return 'Ni Hao!';
   } else if (idioma === 'ingles') {
     return 'Hello!';
   }
@@ -69,16 +69,16 @@ function colors(color) {
   //Usar el statement Switch.
 
   switch (color) {
-    case color === 'blue':
+    case 'blue':
       return 'This is blue'
       break;
-    case color === 'red':
+    case 'red':
       return 'This is red'
       break;
-    case color === 'green':
+    case 'green':
       return 'This is green'
       break;
-    case color === 'orange':
+    case 'orange':
       return 'This is orange'
       break;
 
@@ -103,7 +103,7 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (numero > 50 || numero < 20) {
+  if (numero < 50 && numero > 20) {
     return true;
   }
 
@@ -183,7 +183,11 @@ function esPrimo(numero) {
     }
     return true;
   }
+
+  return false;
 }
+
+
 
 function esVerdadero(valor) {
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
@@ -202,8 +206,9 @@ function tablaDelSeis() {
   //Escribe tu código aquí 
   let array = [];
   for (let i = 0; i <= 10; i++) {
-    array.push(6 * i);
+    array [i] = 6 * i;
   }
+  return array;
 
 }
 
